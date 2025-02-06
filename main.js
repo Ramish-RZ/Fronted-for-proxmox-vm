@@ -1,28 +1,5 @@
 
-// async function submitForm(event) {
-//     event.preventDefault(); // Prevent page reload
 
-//     const name = document.getElementById('name').value;
-//     const email = document.getElementById('email').value;
-//     try{
-//         const response = await fetch('http://10.12.5.250:3000/api/data', { 
-//           method: 'POST',
-//           headers: {
-//             'Content-Type': 'application/json',
-//           },
-//           body: JSON.stringify({ name, email }),
-//         });
-    
-//         if (response.ok) {
-//           alert('Data submitted successfully!');
-//         } else {
-//           alert('Failed to submit data.');
-//         }
-
-//     } catch(error){
-//         console.log("fetch failed", error.message)
-//     }
-//   }
 async function handleFormSubmit(event) {
   event.preventDefault();
 
@@ -31,7 +8,7 @@ async function handleFormSubmit(event) {
   const gender = document.getElementById('gender').value;
 
   try {
-    const response = await fetch('http://10.12.5.250:3000/api/data', {
+    const response = await fetch('/api/data', {  // No need for full URL 
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ name, email, gender }),
