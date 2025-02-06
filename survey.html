@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Spørreundersøkelsen</title>
+</head>
+<body>
+    <h1>Velkommen til Spørreundersøkelsen</h1>
+    <form id="q" onsubmit="submitSurvey(event)">
+        <h2>Skala 1-10: 1 = Ingenting, 10 = Veldig mye</h2>
+        
+        <label for="q1" class="question-label">1. Hvor mye kan du om teknologi generelt?</label><br>
+        <div class="radio-group">
+            <input type="radio" id="q1-1" name="q1" value="1" required>
+            <label for="q1-1">1</label>
+            <input type="radio" id="q1-2" name="q1" value="2">
+            <label for="q1-2">2</label>
+            <input type="radio" id="q1-3" name="q1" value="3">
+            <label for="q1-3">3</label>
+            <input type="radio" id="q1-4" name="q1" value="4">
+            <label for="q1-4">4</label>
+            <input type="radio" id="q1-5" name="q1" value="5">
+            <label for="q1-5">5</label>
+            <input type="radio" id="q1-6" name="q1" value="6">
+            <label for="q1-6">6</label>
+            <input type="radio" id="q1-7" name="q1" value="7">
+            <label for="q1-7">7</label>
+            <input type="radio" id="q1-8" name="q1" value="8">
+            <label for="q1-8">8</label>
+            <input type="radio" id="q1-9" name="q1" value="9">
+            <label for="q1-9">9</label>
+            <input type="radio" id="q1-10" name="q1" value="10">
+            <label for="q1-10">10</label>
+        </div>
+        <br>
+
+        <label for="q2" class="question-label">2. Hvor mye kan du om AI (kunstig intelligens)?</label><br>
+        <div class="radio-group">
+            <input type="radio" id="q2-1" name="q2" value="1" required>
+            <label for="q2-1">1</label>
+            <input type="radio" id="q2-2" name="q2" value="2">
+            <label for="q2-2">2</label>
+            <input type="radio" id="q2-3" name="q2" value="3">
+            <label for="q2-3">3</label>
+            <input type="radio" id="q2-4" name="q2" value="4">
+            <label for="q2-4">4</label>
+            <input type="radio" id="q2-5" name="q2" value="5">
+            <label for="q2-5">5</label>
+            <input type="radio" id="q2-6" name="q2" value="6">
+            <label for="q2-6">6</label>
+            <input type="radio" id="q2-7" name="q2" value="7">
+            <label for="q2-7">7</label>
+            <input type="radio" id="q2-8" name="q2" value="8">
+            <label for="q2-8">8</label>
+            <input type="radio" id="q2-9" name="q2" value="9">
+            <label for="q2-9">9</label>
+            <input type="radio" id="q2-10" name="q2" value="10">
+            <label for="q2-10">10</label>
+        </div>
+        <br>
+
+        <label for="q3" class="question-label">3. Bruker du AI i hverdagen?</label><br>
+        <div class="radio-group">
+            <input type="radio" id="q3-1" name="q3" value="1" required>
+            <label for="q3-1">1</label>
+            <input type="radio" id="q3-2" name="q3" value="2">
+            <label for="q3-2">2</label>
+            <input type="radio" id="q3-3" name="q3" value="3">
+            <label for="q3-3">3</label>
+            <input type="radio" id="q3-4" name="q3" value="4">
+            <label for="q3-4">4</label>
+            <input type="radio" id="q3-5" name="q3" value="5">
+            <label for="q3-5">5</label>
+            <input type="radio" id="q3-6" name="q3" value="6">
+            <label for="q3-6">6</label>
+            <input type="radio" id="q3-7" name="q3" value="7">
+            <label for="q3-7">7</label>
+            <input type="radio" id="q3-8" name="q3" value="8">
+            <label for="q3-8">8</label>
+            <input type="radio" id="q3-9" name="q3" value="9">
+            <label for="q3-9">9</label>
+            <input type="radio" id="q3-10" name="q3" value="10">
+            <label for="q3-10">10</label>
+        </div>
+        <br>
+
+        <label for="q4" class="question-label">4. Hvor enkelt synes du det er å lære nye teknologiske verktøy? (1 = Vanskelig, 10 = Veldig enkelt)</label><br>
+        <div class="radio-group">
+            <input type="radio" id="q4-1" name="q4" value="1" required>
+            <label for="q4-1">1</label>
+            <input type="radio" id="q4-2" name="q4" value="2">
+            <label for="q4-2">2</label>
+            <input type="radio" id="q4-3" name="q4" value="3">
+            <label for="q4-3">3</label>
+            <input type="radio" id="q4-4" name="q4" value="4">
+            <label for="q4-4">4</label>
+            <input type="radio" id="q4-5" name="q4" value="5">
+            <label for="q4-5">5</label>
+            <input type="radio" id="q4-6" name="q4" value="6">
+            <label for="q4-6">6</label>
+            <input type="radio" id="q4-7" name="q4" value="7">
+            <label for="q4-7">7</label>
+            <input type="radio" id="q4-8" name="q4" value="8">
+            <label for="q4-8">8</label>
+            <input type="radio" id="q4-9" name="q4" value="9">
+            <label for="q4-9">9</label>
+            <input type="radio" id="q4-10" name="q4" value="10">
+            <label for="q4-10">10</label>
+        </div>
+        <br>
+
+        <label for="q5" class="question-label">5. Hvor viktig synes du teknologi er i hverdagen? (1 = Lite viktig, 10 = Svært viktig)</label><br>
+        <div class="radio-group">
+            <input type="radio" id="q5-1" name="q5" value="1" required>
+            <label for="q5-1">1</label>
+            <input type="radio" id="q5-2" name="q5" value="2">
+            <label for="q5-2">2</label>
+            <input type="radio" id="q5-3" name="q5" value="3">
+            <label for="q5-3">3</label>
+            <input type="radio" id="q5-4" name="q5" value="4">
+            <label for="q5-4">4</label>
+            <input type="radio" id="q5-5" name="q5" value="5">
+            <label for="q5-5">5</label>
+            <input type="radio" id="q5-6" name="q5" value="6">
+            <label for="q5-6">6</label><input type="radio" id="q5-7" name="q5" value="7">
+            <label for="q5-7">7</label><input type="radio" id="q5-8" name="q5" value="8">
+            <label for="q5-8">8</label><input type="radio" id="q5-9" name="q5" value="9">
+            <label for="q5-9">9</label><input type="radio" id="q5-10" name="q5" value="10">
+            <label for="q5-10">10</label>
+        </div>
+        <br>
+          <button type="submit">Send Inn</button>
+    </form>
+    <script>
+        async function submitSurvey(event) {
+  event.preventDefault();
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  const userId = urlParams.get('userId');
+  
+  const answers = {
+    q1: document.querySelector('input[name="q1"]:checked').value,
+    q2: document.querySelector('input[name="q2"]:checked').value,
+    q3: document.querySelector('input[name="q3"]:checked').value,
+    q4: document.querySelector('input[name="q4"]:checked').value,
+    q5: document.querySelector('input[name="q5"]:checked').value
+  };
+
+  try {
+    const response = await fetch('http://10.12.5.250:3000/api/survey', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ userId, answers }),
+    });
+
+    if (response.ok) {
+      window.location.href = "thank_you.html"; 
+    } else {
+      alert('Failed to submit survey.');
+    }
+  } catch (error) {
+    console.error('Error submitting survey:', error);
+  }
+}
+      </script>
+      
+</body>
+</html>

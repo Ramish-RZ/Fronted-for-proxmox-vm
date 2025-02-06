@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Form Submission</title>
+  <script src="main.js" defer>
+  </script>
+</head>
+<body>
+  <h1>Velkommen til vår samfunnsfaglige undersøkelse</h1>
+<p id="intro">
+    Vi ønsker å samle inn data om hvordan teknologi påvirker hverdagen. Informasjonen vil brukes 
+    til forskningsformål og slettes etter 3 måneder. Undersøkelsen er anonym, og dine svar vil 
+    bli behandlet konfidensielt.
+</p>
+<div id="link-container">
+  <a href="survey.html">Start undersøkelsen</a>
+</div>
+
+  <!-- <h1>Submit Your Data</h1>
+  <form onsubmit="submitForm(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <a href="survey.html">
+      <button type="button">Submit</button>
+  </a>
+  </form> -->
+  <h1>Submit Your Data</h1>
+  <form id="user-form" onsubmit="handleFormSubmit(event)">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+      <label for="gender">Choose your gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="male" selected>Male</option> <!-- Added selected -->
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <option value="prefer_not_to_say">Prefer not to say</option>
+      </select>
+    <button type="submit">Submit</button>
+  </form>
+  
+</body>
+</html>
